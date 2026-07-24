@@ -86,15 +86,17 @@ const Hero = () => {
 	 <section id="hero" className="noisy">
 		<h1 className="title">MOJITO</h1>
 		
-		<img
+		<Image
 		 src="/images/hero-left-leaf.png"
 		 alt="left-leaf"
 		 className="left-leaf"
+     width={350} height={350}
 		/>
-		<img
+		<Image
 		 src="/images/hero-right-leaf.png"
 		 alt="right-leaf"
 		 className="right-leaf"
+     width={350} height={350}
 		/>
 		
 		<div className="body">
@@ -114,7 +116,7 @@ const Hero = () => {
 				creative flair, and timeless recipes — designed to delight your
 				senses.
 			 </p>
-			 <a href="#cocktails">View cocktails</a>
+			 <Link href="#cocktails">View cocktails</Link>
 			</div>
 		 </div>
 		</div>
