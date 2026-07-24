@@ -1,6 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { gsap } from "gsap";
+import { ScrollTrigger, SplitText } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +27,7 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        <link rel="icon" type="image/svg+xml" href="/images/logo.png"/>
+        <link rel="icon" type="image/svg+xml" href="/images/logo.png" />
       </head>
       <body className="min-h-full flex flex-col">
         <Navbar />
