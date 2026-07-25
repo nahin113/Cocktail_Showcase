@@ -17,20 +17,6 @@ useGSAP(()=>{
    })
    gsap.fromTo('.details h2',{yPercent:100, opacity:0},{yPercent:0, opacity:1,ease:'power1.inOut'})
    gsap.fromTo('.details p',{yPercent:100, opacity:0},{yPercent:0, opacity:1,ease:'power1.inOut'})
-   
-//    gsap
-// 	.timeline({
-// 	 scrollTrigger: {
-// 		trigger: "#menu",
-// 		start: "top top",
-// 		end: "bottom top",
-// 		scrub: true,
-// 	 },
-// 	})
-// 	.to("#m-right-leaf", { y: 100 }, 0) 
-// 	.to("#m-left-leaf", { y: -100 }, 0)
-
-
 },[currentIndex])
 
 useGSAP(() => {
@@ -43,8 +29,8 @@ useGSAP(() => {
         scrub: true,
       },
     })
-    .to("#m-right-leaf", { y: 1300 }, 0)
-    .to("#m-left-leaf", { y: -1300 }, 0);
+    .to("#m-right-leaf", { y: 700 }, 0)
+    .to("#m-left-leaf", { y: -700 }, 0);
 }, []);
 
   const totalCocktails = allCocktails.length;
