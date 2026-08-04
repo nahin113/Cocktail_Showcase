@@ -30,6 +30,7 @@ This project was built as a hands-on exercise to learn and demonstrate **GSAP an
 
 ## Live Demo
 
+https://cocktail-showcase.onrender.com
 
 No login or setup required — it's a public static showcase site.
 
